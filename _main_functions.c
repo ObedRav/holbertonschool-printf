@@ -50,7 +50,7 @@ int print_percent(__attribute__((unused))va_list list)
  * Return: Will returns the amount of characters printed
  */
 
-int print_number(va_list list)
+int print_integer(va_list list)
 {
     int length;
 

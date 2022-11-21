@@ -45,7 +45,7 @@ int print_number(va_list list)
  * Return: The number of arguments printed
  */
 
-int print_unsigned_number(unsigned int list)
+int print_unsgned_number(unsigned int list)
 {
     int len, div;
     unsigned int num;

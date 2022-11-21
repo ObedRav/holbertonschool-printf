@@ -19,7 +19,7 @@ int _format(const char *format, conver_t f_list[], va_list arg_list)
     {
         if (format[i] == '%')
         {
-            for (j = 0; f_list[j] != NULL; j++)
+            for (j = 0; f_list[j].sym != NULL; j++)
             {
                 if (format[i] + 1 == f_list[j].sym[0])
                 {

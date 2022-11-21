@@ -26,10 +26,10 @@ int print_string(va_list list)
     string = va_arg(list, char *);
     if (string == NULL)
         string = "(null)";
-    for (i = 0; string[i] != '\0'; i++)
+    for (index = 0; string[i] != '\0'; index++)
         _write_char(string[i]);
     
-    return (i);
+    return (index);
 }
 
 /**
@@ -38,9 +38,9 @@ int print_string(va_list list)
  * Return: Will returns the number of characters printed
  */
 
-int print_percent(va_list list)
+int print_percent(__attribute__((unused))va_list list)
 {
-    _write_char('%')
+    _write_char('%');
     return (1);
 }
 
@@ -71,10 +71,7 @@ int unsigned_integer(va_list list)
     num = va_arg(list, int);
 
     if (num == 0)
-        return (print_unsigned_number(num));
+        return (print_unsgned_number(num));
 
-    if (num < 0)
-        return (-1);
-
-    return (print_unsigned_number(num));
+    return (print_unsgned_number(num));
 }

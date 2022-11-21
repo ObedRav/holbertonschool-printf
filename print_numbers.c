@@ -6,25 +6,27 @@
  * Return: The number of arguments printed
  */
 
-int print_number(va_list list)
+int print_number(va_list args)
 {
-	int numberList, len, div;
+	int n;
+	int div;
+	int len;
 	unsigned int num;
 
-	numberList = va_arg(list, int);
+	n  = va_arg(args, int);
 	div = 1;
 	len = 0;
 
-	if (numberList < 0)
+	if (n < 0)
 	{
 		len += _write_char('-');
-		num = numberList * -1;
+		num = n * -1;
 	}
 	else
-		num = numberList;
+		num = n;
 
 	for (; num / div > 9; )
-		num *= 10;
+		div *= 10;
 
 	for (; div != 0; )
 	{

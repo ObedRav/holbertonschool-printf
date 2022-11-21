@@ -6,7 +6,7 @@
  * Return: Will returns the amount of characters printed
  */
 
-int print_char(va_list list) 
+int print_char(va_list list)
 {
     _write_char(va_arg(list, int));
     return (1);
@@ -28,7 +28,6 @@ int print_string(va_list list)
         string = "(null)";
     for (index = 0; string[index] != '\0'; index++)
         _write_char(string[index]);
-    
     return (index);
 }
 
@@ -45,7 +44,7 @@ int print_percent(__attribute__((unused))va_list list)
 }
 
 /**
- * print_number - Print numbers
+ * print_integer - Print numbers
  * @list: list of numbers
  * Return: Will returns the amount of characters printed
  */
@@ -72,6 +71,5 @@ int unsigned_integer(va_list list)
 
     if (num == 0)
         return (print_unsgned_number(num));
-
     return (print_unsgned_number(num));
 }

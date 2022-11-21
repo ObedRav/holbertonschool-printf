@@ -40,7 +40,7 @@ int print_number(va_list list)
 }
 
 /**
- * print_unsigned_number - print an unsigned number
+ * print_unsgned_number - print an unsigned number
  * @list: list of unsigned numbers
  * Return: The number of arguments printed
  */

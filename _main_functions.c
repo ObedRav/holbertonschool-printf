@@ -26,8 +26,8 @@ int print_string(va_list list)
     string = va_arg(list, char *);
     if (string == NULL)
         string = "(null)";
-    for (index = 0; string[i] != '\0'; index++)
-        _write_char(string[i]);
+    for (index = 0; string[index] != '\0'; index++)
+        _write_char(string[index]);
     
     return (index);
 }

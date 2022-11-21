@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * format - Receives the main string and all the necessary parameters to
+ * recording_error - Receives the main string and all the necessary parameters to
  *          print a formated string.
  * @format: A string containing all the desired characters.
  * @f_list: A list of all the posible functions.
@@ -9,7 +9,7 @@
  * Return: A total count of the characters printed.
  */
 
-int _format(const char *format, conver_t f_list[], va_list arg_list)
+int recording_error(const char *format, conver_t f_list[], va_list arg_list)
 {
     int i, j, r_val, printed_chars;
 

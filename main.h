@@ -36,4 +36,5 @@ int print_octal(va_list list);
 int print_hex(va_list list);
 int print_heX(va_list list);
 int print_unsgned_number(unsigned int);
+int recording_error(const char *format, conver_t f_list[], va_list arg_list);
 #endif

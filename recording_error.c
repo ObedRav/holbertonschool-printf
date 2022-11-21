@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * recording_error - Receives the main string and all the necessary parameters to
- * print a formated string.
+ * recording_error - Receives the main string and all the necessary parameters
+ * to print a formated string.
  * @format: A string containing all the desired characters.
  * @f_list: A list of all the posible functions.
  * @arg_list: A list containing all the argumentents passed to the program.
@@ -49,4 +49,5 @@ int recording_error(const char *format, conver_t f_list[], va_list arg_list)
 		}
 	}
 	return (printed_chars);
+
 }

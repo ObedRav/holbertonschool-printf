@@ -14,7 +14,6 @@ int print_number(va_list list)
 	numberList = va_arg(list, int);
 	div = 1;
 	len = 0;
-	num = 0;
 
 	if (numberList < 0)
 	{
@@ -26,12 +25,12 @@ int print_number(va_list list)
 		num = numberList;
 	}
 
-	for (; (num / div) < 9; )
+	for (; num / div > 9; )
 		num *= 10;
 
 	for (; div != 0; )
 	{
-		len += _write_char((num / div));
+		len += _write_char('0' + num / div);
 		num %= div;
 		div /= 10;
 	}

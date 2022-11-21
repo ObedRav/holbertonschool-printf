@@ -18,12 +18,10 @@ int print_number(va_list list)
 	if (numberList < 0)
 	{
 		len += _write_char('-');
-		num = (numberList * -1);
+		num = numberList * -1;
 	}
 	else
-	{
 		num = numberList;
-	}
 
 	for (; num / div > 9; )
 		num *= 10;

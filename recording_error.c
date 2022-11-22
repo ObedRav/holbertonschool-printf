@@ -10,6 +10,11 @@
  */
 int recording_error(const char *format, conver_t f_list[], va_list arg_list)
 {
+	/**
+	 *  i, j are iterators
+	 *  printed_chars: the number of characters printed
+	 *  r_val: the function specifiqued
+	 */
 	int i, j, r_val, printed_chars;
 
 	printed_chars = 0;

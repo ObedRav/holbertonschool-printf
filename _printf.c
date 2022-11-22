@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 		{"d", print_integer},
 		{"i", print_integer},
 		{"u", unsigned_integer},
+		{"b", print_binary},
 		{NULL, NULL}
 	};
 

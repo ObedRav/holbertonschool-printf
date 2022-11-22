@@ -2,7 +2,7 @@
 
 /**
  * print_number - print a number
- * @list: list of numbers
+ * @args: list of numbers
  * Return: The number of arguments printed
  */
 

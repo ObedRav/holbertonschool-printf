@@ -23,6 +23,7 @@ int print_binary(va_list list)
         return (-1);
     len = base_len(num, base);
     str = malloc(sizeof(char) * len + 1);
+    total = malloc(sizeof(char) * (len*2) + 1);
 	if (str == NULL)
 		return (-1);
 

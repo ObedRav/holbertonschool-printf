@@ -38,7 +38,7 @@ int print_unsgned_number(unsigned int);
  */
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
-void *_memcpy(void *dest, const void *src, size_t n);
+char *_memcpy(char *dest, char *src, unsigned int n);
 char *rev_string(char *s);
 
 #endif

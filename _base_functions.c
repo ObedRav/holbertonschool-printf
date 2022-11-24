@@ -9,9 +9,8 @@
 int print_binary(va_list list)
 {
     unsigned int num, base;
-    int i, len, len2, j;
+    int i, len;
     char *str;
-    char *total;
 
     base = 2;
 
@@ -23,7 +22,6 @@ int print_binary(va_list list)
         return (-1);
     len = base_len(num, base);
     str = malloc(sizeof(char) * len + 1);
-    total = malloc(sizeof(char) * (len*2) + 1);
 	if (str == NULL)
 		return (-1);
 
@@ -31,14 +29,8 @@ int print_binary(va_list list)
 	{
 		str[i] = num % 2; 
 		num = num / 2;
-        total[i] = str[i];
 	}
-    len2 = _strlen(str);
-    for (j = 0; j <= len2; j++)
-    {
-        total[i+j] = total[i];
-    }
-    str[i+j] = '\0';
+    str[i] = '\0';
     write_base(str);
     free(str);
     return (len);

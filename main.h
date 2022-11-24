@@ -33,4 +33,10 @@ int print_binary(va_list);
 int unsigned_integer(va_list);
 int print_unsgned_number(unsigned int);
 
+/**
+ * Suport functions
+ */
+void write_base(char *str);
+unsigned int base_len(unsigned int num, int base);
+
 #endif

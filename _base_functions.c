@@ -9,7 +9,7 @@
 int print_binary(va_list list)
 {
     unsigned int num, base;
-    int i, len, len2;
+    int i, len, len2, j;
     char *str;
     char *total;
 

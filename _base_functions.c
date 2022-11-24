@@ -32,7 +32,7 @@ int print_binary(va_list list)
 		num = num / 2;
         total[i] = str[i];
 	}
-    len2 = strlen(str);
+    len2 = _strlen(str);
     for (j = 0; j <= len2; j++)
     {
         total[i+j] = total[i];

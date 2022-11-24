@@ -1,4 +1,26 @@
 #include "main.h"
+
+/**
+ * _memcpy - Copies @n bytes from the memory area pointed
+ *           to by @src into that pointed to by @dest.
+ * @dest: A pointer to the memory area to copy @src into.
+ * @src: The source buffer to copy characters from.
+ * @n: The number of bytes to copy from @src.
+ *
+ * Return: A pointer to the destination buffer @dest.
+ */
+void *_memcpy(void *dest, const void *src, unsigned int n)
+{
+	unsigned int i;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
+
+	for (i = 0; i < n; i++)
+		destination[i] = source[i];
+    destination[i] = '\0';
+	return (dest);
+}
+
 /**
  * write_base - sends characters to be written on standard output
  * @str: String to parse
@@ -29,18 +51,30 @@ unsigned int base_len(unsigned int num, int base)
 }
 
 /**
- * _strlen - count chars
- * @s: data from user
- * Return: The result
+ * rev_string - Reverses a string.
+ * @s: The string to be reversed.
+ * Return: A pointer to a character
  */
-int _strlen(char *s)
+char *rev_string(char *s)
 {
-	int i = 0, length = 0;
+	int len;
+	int head;
+	char tmp;
+	char *dest;
 
-	while (s[i++])
+	for (len = 0; s[len] != '\0'; len++)
+	{}
+
+	dest = malloc(sizeof(char) * len + 1);
+	if (dest == NULL)
+		return (NULL);
+
+	_memcpy(dest, s, len);
+	for (head = 0; head < len; head++, len--)
 	{
-		length++;
+		tmp = dest[len - 1];
+		dest[len - 1] = dest[head];
+		dest[head] = tmp;
 	}
-
-	return (length);
+	return (dest);
 }

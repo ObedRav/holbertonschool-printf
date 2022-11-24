@@ -31,7 +31,9 @@ int print_binary(va_list list)
 		num = num / 2;
 	}
     str[i] = '\0';
-    write_base(str);
+    rev_str = rev_string(str);
+    write_base(rev_str);
     free(str);
+    free(rev_str);
     return (len);
 }

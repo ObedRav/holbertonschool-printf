@@ -11,6 +11,7 @@ int print_binary(va_list list)
     unsigned int num, base;
     int i, len;
     char *str;
+    char *rev_str;
 
     base = 2;
 

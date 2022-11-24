@@ -9,8 +9,12 @@
  */
 int main(void)
 {
-    int a;
+    int a, b;
+
+    b = 4;
+
     a = _printf("%b\n", 0);
     printf("%d\n", a);
+    _printf("%b\n", 4);
     return (0);
 }

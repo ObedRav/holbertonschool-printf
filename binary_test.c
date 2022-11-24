@@ -15,6 +15,6 @@ int main(void)
 
     a = _printf("%b\n", 0);
     printf("%d\n", a);
-    _printf("%b\n", 4);
+    _printf("%b\n", b);
     return (0);
 }

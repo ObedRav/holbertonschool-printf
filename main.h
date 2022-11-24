@@ -38,5 +38,6 @@ int print_unsgned_number(unsigned int);
  */
 void write_base(char *str);
 unsigned int base_len(unsigned int num, int base);
+int _strlen(char *s);
 
 #endif

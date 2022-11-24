@@ -9,8 +9,9 @@
 int print_binary(va_list list)
 {
     unsigned int num, base;
-    int i, len;
+    int i, len, len2;
     char *str;
+    char *total;
 
     base = 2;
 
@@ -29,8 +30,14 @@ int print_binary(va_list list)
 	{
 		str[i] = num % 2; 
 		num = num / 2;
+        total[i] = str[i];
 	}
-    str[i] = '\0';
+    len2 = strlen(str);
+    for (j = 0; j <= len2; j++)
+    {
+        total[i+j] = total[i];
+    }
+    str[i+j] = '\0';
     write_base(str);
     free(str);
     return (len);

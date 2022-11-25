@@ -5,8 +5,8 @@ NAME = executable
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format
 
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all:
+	$(CC) $(SPC) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)

@@ -19,3 +19,6 @@ The available convertion specifiers are:
 1. [Makefile](./Makefile): Makefile that contains the compiler, the clean method, etc.
 2. [Header](./main.h): The header file, contains all prototipes's functions, and the libraries use it in the project.
 3. [Tests](./tests): The folder of tests, contains all tests files.
+4. [Base Functions](./_base_functions.c): C file that contains the functions that change a int to another numerical system.
+5. [The base of the function](./_printf.c): The principal function.
+6. [Write Char](./_write_char.c): Writes the character c to stdout.

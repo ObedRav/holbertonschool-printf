@@ -1,6 +1,8 @@
 # PRINTF
 Write a function that produces output according to a format (reference: Printf function).
 
+![alt text](https://github.com/ObedRav/holbertonschool-printf/blob/main/_printf.drawio.png)
+
 ## Description
 The _printf() function produces output according to a format which is described
 below. This function write its output to the stdout, the standard output stream. Returns the count of printed characters when the function is successful and -1 when the function fails.
@@ -22,3 +24,4 @@ The available convertion specifiers are:
 4. [Base Functions](./_base_functions.c): C file that contains the functions that change a int to another numerical system.
 5. [The base of the function](./_printf.c): The principal function.
 6. [Write Char](./_write_char.c): Writes the character c to stdout.
+7. [](./):

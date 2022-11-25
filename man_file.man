@@ -45,5 +45,9 @@ _printf("This is a simple printf %s made in %d ", "Function", 2022);
 .IP
 $ "This is a simple printf Function made in 2022"
 .br
+
+.SH BUGS
+No detected so far. Please report any to cestrad5@gmail.com
+
 .SH AUTHOR
 Luis Alejandro Puerta / Obed Rayo / Camilo Estrada

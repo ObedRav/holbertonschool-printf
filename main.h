@@ -32,7 +32,7 @@ int print_number(va_list);
 int print_binary(va_list);
 int unsigned_integer(va_list);
 int print_unsgned_number(unsigned int);
-
+int print_reversed(va_list);
 /**
  * Suport functions
  */

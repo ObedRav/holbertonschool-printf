@@ -49,8 +49,8 @@ int print_unsgned_number(unsigned int list)
 	int len, div;
 	unsigned int num;
 
-    div = 1;
-    len = 0;
+	div = 1;
+	len = 0;
 
 	num = list;
 

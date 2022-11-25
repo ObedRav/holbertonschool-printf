@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_reversed - Calls a function to reverse and print a string
- * @arg: Argument passed to the function
+ * @list: Argument passed to the function
  * Return: The amount of characters printed
  */
 int print_reversed(va_list list)

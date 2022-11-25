@@ -8,24 +8,24 @@
 
 int print_binary(va_list list)
 {
-    unsigned int num, base;
-    int i, len;
-    char *str;
-    char *rev_str;
+	unsigned int num, base;
+	int i, len;
+	char *str;
+	char *rev_str;
 
-    base = 2;
+	base = 2;
 
-    num = va_arg(list, unsigned int);
-    if (num == 0)
-        return(_write_char('0'));
-    if (num < 1)
-        return (-1);
-    len = base_len(num, base);
-    str = malloc(sizeof(char) * len + 1);
+	num = va_arg(list, unsigned int);
+	if (num == 0)
+		return (_write_char('0'));
+	if (num < 1)
+		return (-1);
+	len = base_len(num, base);
+	str = malloc(sizeof(char) * len + 1);
 	if (str == NULL)
 		return (-1);
 
-    for (i = 0; num > 0; i++)
+	for (i = 0; num > 0; i++)
 	{
 		if (num % 2 == 0)
 			str[i] = '0';
@@ -33,10 +33,10 @@ int print_binary(va_list list)
 			str[i] = '1';
 		num = num / 2;
 	}
-    str[i] = '\0';
-    rev_str = rev_string(str);
-    write_base(rev_str);
-    free(str);
-    free(rev_str);
-    return (len);
+	str[i] = '\0';
+	rev_str = rev_string(str);
+	write_base(rev_str);
+	free(str);
+	free(rev_str);
+	return (len);
 }

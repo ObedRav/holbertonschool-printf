@@ -10,14 +10,10 @@
  */
 int recording_error(const char *format, conver_t f_list[], va_list arg_list)
 {
-	/**
-	 *  i, j are iterators
-	 *  printed_chars: the number of characters printed
-	 *  r_val: the function specifiqued
-	 */
-	int i, j, r_val, printed_chars;
+	int i, j, r_val, printed_chars;/* i and j iterators, r_val functions*/
 
 	printed_chars = 0;
+
 	for (i = 0; format[i] != '\0'; i++)/* Iterates through the main str*/
 	{
 		if (format[i] == '%') /*Checks for format specifiers*/
@@ -54,5 +50,4 @@ int recording_error(const char *format, conver_t f_list[], va_list arg_list)
 		}
 	}
 	return (printed_chars);
-
 }

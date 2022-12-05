@@ -24,4 +24,3 @@ The available convertion specifiers are:
 4. [Base Functions](./_base_functions.c): C file that contains the functions that change a int to another numerical system.
 5. [The base of the function](./_printf.c): The principal function.
 6. [Write Char](./_write_char.c): Writes the character c to stdout.
-7. [](./):

@@ -57,3 +57,8 @@ If you find any bug, please, let us know.
 
 ## Styling
 All files have been written in the [Betty Style](https://github.com/hs-hq/Betty).
+
+## Authors :grey_exclamation:
+* **Obed Rayo** <a href="https://github.com/ObedRav" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
+
+* **Camilo Estrada** <a href="https://github.com/cestrad5" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
